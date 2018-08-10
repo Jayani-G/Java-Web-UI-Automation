@@ -30,4 +30,29 @@ public class Login  {
     public static void loginToFtr() {
 
     }
+    public static void setBdayTwo(){
+        ogmLoginPage.clickDay();
+        ogmLoginPage.setDay();
+        ogmLoginPage.dropMonth();
+        ogmLoginPage.setMonth();
+        ogmLoginPage.dropYear();
+        ogmLoginPage.setYear2();
+        ogmLoginPage.setEnter();
+    }
+
+    public static void setBdayOne(){
+        ogmLoginPage.clickDay();
+        ogmLoginPage.setDay();
+        ogmLoginPage.dropMonth();
+        ogmLoginPage.setMonth();
+        ogmLoginPage.dropYear();
+        ogmLoginPage.setYear();
+        ogmLoginPage.setEnter();
+    }
+    public static String getErrorMessage(){
+        return ogmLoginPage.errorEnteringMessage();
+    }
+    public static void clickMyAccount(){
+        ogmLoginPage.clickMyAccount();
+    }
 }
